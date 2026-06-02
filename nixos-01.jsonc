@@ -24,8 +24,8 @@
             "\u001b[38;2;205;173;252m\u001B[1m",   // {$10},
             "┌──────",   // {$11},
             "───────",   // {$12},
-            "──────┐",   // {$13},
-         ],
+            "──────┐"    // {$13} - FIXED: removed trailing comma
+        ],
         "percent": {
             "type": 9,         // 1=number, 2=bar, 3=both, 9=colored number
             "color": {
@@ -43,146 +43,153 @@
             "keys": ""
             },
             "key": "{$4}                󱐋󱐋 Fastfetch ",
-            "format": "{$6}{2}",
+            "format": "{$6}{2}"
         },
+        // ═══════════════════════════════════════════════════════════
+        // HARDWARE SECTION
+        // ═══════════════════════════════════════════════════════════
         {
             "type": "custom",
             "format": "{$1}{$11}{$2}{$12}{$3}{$12}{$4}{$12}{$5}{$12}{$6}{$12}{$7}{$12}{$8}{$12}{$9}{$12}{$10}{$13} Hardware "
         },
         {
             "type": "host",
-            "key": "{$1}├   PC        ",
+            "key": "{$1}├   PC        "
         },
-                {
+        {
             "type": "board",
-            "key": "{$2}├ 󱔼  Board     ",
+            "key": "{$2}├ 󱔼  Board     "
         },
         {
             "type": "cpu",
-            "key": "{$3}├   CPU       ",
+            "key": "{$3}├   CPU       "
         },
         {
             "type": "gpu",
-            "key": "{$4}├ 󰾲  GPU       ",
+            "key": "{$4}├ 󰾲  GPU       "
         },
         {
             "type": "display",
-            "key": "{$5}├ 󰍹  Display   ",
+            "key": "{$5}├ 󰍹  Display   "
         },
         {
             "type": "sound",
-            //"format": "{platform-api}/{2} ({3})",
-            "key": "{$6}├   Sound     ",
+            "key": "{$6}├   Sound     "
         },
         {
             "type": "battery",
             "key": "{$6}├ 󰢟  Battery   ",
-            "format": "{manufacturer} {model-name} ({capacity})",
+            "format": "{manufacturer} {model-name} ({capacity})"
         },
         {
             "type": "memory",
-            "key": "{$7}├   Memory    ",
+            "key": "{$7}├   Memory    ",
             "percent": {
                 "type": 3, // 3 = show number + bar + percentage
-                "green": 30, // <30% is green
-                "yellow": 70 // 30-70% is yellow, >70% is red
+                "green": 50, // <50% is green
+                "yellow": 80 // 50-80% is yellow, >80% is red
             }
         },
-                {
+        {
             "type": "swap",
             "key": "{$8}├ 󰯍  Swap      ",
             "percent": {
                 "type": 3, // 3 = show number + bar + percentage
-                "green": 30, // <30% is green
-                "yellow": 70 // 30-70% is yellow, >70% is red
+                "green": 50, // <50% is green
+                "yellow": 80 // 50-80% is yellow, >80% is red
             }
         },
-
         {
             "type": "disk",
-            "key": "{$9}├   NixOS     ",
+            "key": "{$9}├   NixOS     ",
             "folders": ["/"],
             "percent": {
                 "type": 3, // 3 = show number + bar + percentage
-                "green": 30, // <30% is green
-                "yellow": 70 // 30-70% is yellow, >70% is red
+                "green": 50, // <50% is green
+                "yellow": 80 // 50-80% is yellow, >80% is red
             }
         },
         {
             "type": "disk",
-            "key": "{$10}└   Home      ",
+            "key": "{$10}└   Home      ",
             "folders": ["/home"],
             "percent": {
                 "type": 3, // 3 = show number + bar + percentage
-                "green": 30, // <30% is green
-                "yellow": 70 // 30-70% is yellow, >70% is red
+                "green": 50, // <50% is green
+                "yellow": 80 // 50-80% is yellow, >80% is red
             }
         },
+        // ═══════════════════════════════════════════════════════════
+        // SOFTWARE SECTION
+        // ═══════════════════════════════════════════════════════════
         {
             "type": "custom",
             "format": "{$10}{$11}{$9}{$12}{$8}{$12}{$7}{$12}{$6}{$12}{$5}{$12}{$4}{$12}{$3}{$12}{$2}{$12}{$1}{$13} Software "
         },
         {
             "type": "os",
-            "key": "{$10}├   Distro    ",
+            "key": "{$10}├   Distro    ",
             "format": "{name} {build-id} ({codename}) {arch}"
         },
         {
             "type": "kernel",
-            "key": "{$10}├   Kernel    ",
+            "key": "{$10}├   Kernel    "
         },
         {
             "type": "bios",
-            "key": "{$9}├ 󰚗  BIOS      ",
+            "key": "{$9}├ 󰚗  BIOS      "
         },
         {
             "type": "packages",
-            "key": "{$9}├ 󰏖  Packages  ",
+            "key": "{$9}├ 󰏖  Packages  "
         },
         {
             "type": "Processes",
-            "key": "{$9}├ 󰑮  Processes ",
+            "key": "{$9}├ 󰑮  Processes "
         },
         {
             "type": "shell",
-            "key": "{$8}├   Shell     ",
+            "key": "{$8}├   Shell     "
         },
         {
             "type": "terminal",
-            "key": "{$7}├   Terminal  ",
+            "key": "{$7}├   Terminal  "
         },
         {
             "type": "terminalfont",
-            "key": "{$6}├ 󰛖  Term Font ",
+            "key": "{$6}├ 󰛖  Term Font "
         },
         {
             "type": "de",
-            "key": "{$5}├   DE        ",
+            "key": "{$5}├   DE        "
         },
         {
             "type": "lm",
-            "key": "{$4}├ 󰧨  Login     ",
+            "key": "{$4}├ 󰧨  Login     "
         },
         {
             "type": "wm",
-            "key": "{$3}├   Window    ",
+            "key": "{$3}├   Window    "
         },
         {
             "type": "wmtheme",
-            "key": "{$2}├ 󰉼  Theme     ",
+            "key": "{$2}├ 󰉼  Theme     "
         },
         {
             "type": "font",
-            "key": "{$2}├ 󰛖  Font      ",
+            "key": "{$2}├ 󰛖  Font      "
         },
         {
             "type": "opengl",
-            "key": "{$1}├ 󰆧  OpenGL    ",
+            "key": "{$1}├ 󰆧  OpenGL    "
         },
         {
             "type": "vulkan",
-            "key": "{$1}└ 󰈸  Vulkan    ",
+            "key": "{$1}└ 󰈸  Vulkan    "
         },
+        // ═══════════════════════════════════════════════════════════
+        // CONNECTIVITY SECTION
+        // ═══════════════════════════════════════════════════════════
         {
             "type": "custom",
             "format": "{$1}{$11}{$2}{$12}{$3}{$12}{$4}{$12}{$5}{$12}{$6}{$12}{$7}{$12}{$8}{$12}{$9}{$12}{$10}{$13} Connectivity"
@@ -199,13 +206,13 @@
         },
         {
             "type": "wifi",
-            "key": "{$2}├   WiFi      ",
+            "key": "{$2}├   WiFi      ",
             "format": "{4} - {7} - {13} GHz - {10}",
             "showErrors": "never"
         },
         {
             "type": "dns",
-            "key": "{$4}├ 󱦂  DNS       ",
+            "key": "{$4}├ 󱦂  DNS       "
         },
         {
             "type": "localip",
@@ -218,27 +225,30 @@
             "key": "{$8}└ 󰩠  Public IP ",
             "format": "{1} - {2}"
         },
+        // ═══════════════════════════════════════════════════════════
+        // TIME SECTION
+        // ═══════════════════════════════════════════════════════════
         {
             "type": "custom",
             "format": "{$10}{$11}{$9}{$12}{$8}{$12}{$7}{$12}{$6}{$12}{$5}{$12}{$4}{$12}{$3}{$12}{$2}{$12}{$1}{$13} Time "
         },
         {
             "type": "DateTime",
-            "key": "{$10}├ 󰥔  Date/Time ",
+            "key": "{$10}├ 󰥔  Date/Time "
         },
         {
-            "key": "{$8}├   OS Age    ",
+            "key": "{$8}├   OS Age    ",
             "type": "disk",
-            "folders": "/",
+            "folders": ["/"],
             "format": "{create-time:10} ({days} days)"
         },
         {
             "type": "uptime",
-            "key": "{$6}└   Uptime    ",
+            "key": "{$6}└   Uptime    "
         },
         {
             "type": "custom",
             "format": "                {$10}󱄅 {$9}󱄅 {$8}󱄅 {$7}󱄅 {$6}󱄅 {$5}󱄅 {$4}󱄅 {$3}󱄅 {$2}󱄅 {$1}󱄅"
-        },
+        }
     ]
 }
