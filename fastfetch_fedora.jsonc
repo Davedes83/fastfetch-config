@@ -94,7 +94,7 @@
         },
         {
             "type": "swap",
-            "key": "{$8}├ 󰯍 Swap       ",
+            "key": "{$8}├ 󰯍 Swap      ",
             "percent": {
                 "type": 3,
                 "green": 30,
@@ -103,7 +103,7 @@
         },
         {
             "type": "disk",
-            "key": "{$9}├  Fedora     ",
+            "key": "{$9}├  Fedora    ",
             "folders": ["/"],
             "percent": {
                 "type": 3,
