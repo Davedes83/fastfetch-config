@@ -169,10 +169,6 @@
             "key": "{$5}├  DE        "
         },
         {
-            "type": "lm",
-            "key": "{$4}├ 󰧨 Login     "
-        },
-        {
             "type": "wm",
             "key": "{$3}├  Window    "
         },
@@ -229,7 +225,7 @@
         },
         {
             "type": "DateTime",
-            "key": "{$10}├ 󰥔  Date/Time ",
+            "key": "{$10}├ 󰥔 Date/Time ",
         },
         {
             "type": "disk",
