@@ -1,0 +1,122 @@
+{
+    "logo": {
+        "type": "auto",
+        "source": "~/.config/fastfetch/logo/logo.webp",
+        "height": 21,
+        "width": 10,
+        "padding": {
+            "top": 2,
+            "left": 3
+        }
+    },
+    "display": {
+        "separator": " ",
+        "constants": [
+            "\u001b[38;2;66;133;244m\u001B[1m",   // {$1}  - Bright Fedora Blue (Highly Visible)
+            "\u001b[38;2;82;147;245m\u001B[1m",   // {$2}  - Vivid Sky Blue
+            "\u001b[38;2;99;161;247m\u001B[1m",   // {$3}  - Soft Vivid Blue
+            "\u001b[38;2;117;176;248m\u001B[1m",  // {$4}  - Light Brand Blue
+            "\u001b[38;2;135;191;250m\u001B[1m",  // {$5}  - Ice Blue
+            "\u001b[38;2;153;205;251m\u001B[1m",  // {$6}  - Bright Ice
+            "\u001b[38;2;171;220;253m\u001B[1m",  // {$7}  - Pale Sky
+            "\u001b[38;2;189;234;254m\u001B[1m",  // {$8}  - Very Light Blue
+            "\u001b[38;2;212;244;255m\u001B[1m",  // {$9}  - Crisp Frost Blue
+            "\u001b[38;2;235;249;255m\u001B[1m",  // {$10} - Near White Blue
+            "┌──────",                           // {$11}
+            "───────",                           // {$12}
+            "──────"                             // {$13}
+        ],
+        "percent": {
+            "type": 9,
+            "color": {
+                "green": "#4285f4",
+                "yellow": "#abff4a",
+                "red": "#ff8f45"
+            }
+        }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "version",
+            "color": {
+                "keys": ""
+            },
+            "key": "{$4}                󱐋󱐋 Fastfetch ",
+            "format": "{$6}{2}"
+        },
+        {
+            "type": "custom",
+            "format": "{$1}{$11}{$2}{$12}{$3}{$12}{$4}{$12}{$5}{$12}{$6}{$12}{$7}{$12}{$8}{$12}{$9}{$12}{$10}{$13} Hardware "
+        },
+        {
+            "type": "host",
+            "key": "{$1}├  PC        "
+        },
+        {
+            "type": "board",
+            "key": "{$2}├ 󱔼 Board     "
+        },
+        {
+            "type": "cpu",
+            "key": "{$3}├  CPU        ",
+            "showPeCoreCount": false,
+            "temp": false
+        },
+        {
+            "type": "gpu",
+            "key": "{$4}├ 󰾲 GPU        ",
+            "hideType": "pci"
+        },
+        {
+            "type": "display",
+            "key": "{$5}├ 󰍹 Display   ",
+            "compactType": "original"
+        },
+        {
+            "type": "sound",
+            "key": "{$6}├  Sound     "
+        },
+        {
+            "type": "battery",
+            "key": "{$6}├ 󰢟 Battery   ",
+            "format": "{manufacturer} {model-name} ({capacity})",
+            "temp": true
+        },
+        {
+            "type": "memory",
+            "key": "{$7}├  Memory    ",
+            "percent": {
+                "type": 3,
+                "green": 30,
+                "yellow": 70
+            }
+        },
+        {
+            "type": "swap",
+            "key": "{$8}├ 󰯍 Swap       ",
+            "percent": {
+                "type": 3,
+                "green": 30,
+                "yellow": 70
+            }
+        },
+        {
+            "type": "disk",
+            "key": "{$9}├  Fedora     ",
+            "folders": ["/"],
+            "percent": {
+                "type": 3,
+                "green": 30,
+                "yellow": 70
+            }
+        },
+        {
+            "type": "disk",
+            "key": "{$10}├  Games     ",
+            "folders": ["/mnt/c30f4f52-994d-4076-b4cd-5edb0d09e6ef"],
+            "percent": {
+                "type": 3,
+                "green": 30,
+                "yellow": 70
+            }
