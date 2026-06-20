@@ -51,11 +51,11 @@
         },
         {
             "type": "host",
-            "key": "{$1}├  PC        "
+            "key": "{$1}├  PC         "
         },
         {
             "type": "board",
-            "key": "{$2}├ 󱔼 Board     "
+            "key": "{$2}├ 󱔼 Board      "
         },
         {
             "type": "cpu",
@@ -70,22 +70,22 @@
         },
         {
             "type": "display",
-            "key": "{$5}├ 󰍹 Display   ",
+            "key": "{$5}├ 󰍹 Display    ",
             "compactType": "original"
         },
         {
             "type": "sound",
-            "key": "{$6}├  Sound     "
+            "key": "{$6}├  Sound      "
         },
         {
             "type": "battery",
-            "key": "{$6}├ 󰢟 Battery   ",
+            "key": "{$6}├ 󰢟 Battery    ",
             "format": "{manufacturer} {model-name} ({capacity})",
             "temp": true
         },
         {
             "type": "memory",
-            "key": "{$7}├  Memory    ",
+            "key": "{$7}├  Memory     ",
             "percent": {
                 "type": 3,
                 "green": 30,
@@ -94,7 +94,7 @@
         },
         {
             "type": "swap",
-            "key": "{$8}├ 󰯍 Swap      ",
+            "key": "{$8}├ 󰯍 Swap       ",
             "percent": {
                 "type": 3,
                 "green": 30,
@@ -103,7 +103,7 @@
         },
         {
             "type": "disk",
-            "key": "{$9}├  Fedora    ",
+            "key": "{$9}├  Fedora     ",
             "folders": ["/"],
             "percent": {
                 "type": 3,
@@ -113,10 +113,133 @@
         },
         {
             "type": "disk",
-            "key": "{$10}├  Games     ",
+            "key": "{$10}├  Games      ",
             "folders": ["/mnt/c30f4f52-994d-4076-b4cd-5edb0d09e6ef"],
             "percent": {
                 "type": 3,
                 "green": 30,
                 "yellow": 70
             }
+        },
+        {
+            "type": "disk",
+            "key": "{$10}└  Windows    ",
+            "folders": ["/mnt/D62476C62476A8DF"],
+            "percent": {
+                "type": 3,
+                "green": 30,
+                "yellow": 70
+            }
+        },
+        {
+            "type": "custom",
+            "format": "{$10}{$11}{$9}{$12}{$8}{$12}{$7}{$12}{$6}{$12}{$5}{$12}{$4}{$12}{$3}{$12}{$2}{$12}{$1}{$13} Software "
+        },
+        {
+            "type": "os",
+            "key": "{$10}├  Distro     ",
+            "format": "{name} {build-id} {arch}"
+        },
+        {
+            "type": "kernel",
+            "key": "{$10}├  Kernel     "
+        },
+        {
+            "type": "packages",
+            "key": "{$9}├ 󰏖 Packages   "
+        },
+        {
+            "type": "processes",
+            "key": "{$9}├ 󰑮 Processes  "
+        },
+        {
+            "type": "shell",
+            "key": "{$8}├  Shell      "
+        },
+        {
+            "type": "terminal",
+            "key": "{$7}├  Terminal   "
+        },
+        {
+            "type": "terminalfont",
+            "key": "{$6}├ 󰛖 Term Font "
+        },
+        {
+            "type": "de",
+            "key": "{$5}├  DE         "
+        },
+        {
+            "type": "wm",
+            "key": "{$3}├  Window     "
+        },
+        {
+            "type": "wmtheme",
+            "key": "{$2}├ 󰉼 Theme      "
+        },
+        {
+            "type": "font",
+            "key": "{$2}├ 󰛖 Font       "
+        },
+        {
+            "type": "opengl",
+            "key": "{$1}├ 󰆧 OpenGL     "
+        },
+        {
+            "type": "vulkan",
+            "key": "{$1}└ 󰈸 Vulkan     "
+        },
+        {
+            "type": "custom",
+            "format": "{$1}{$11}{$2}{$12}{$3}{$12}{$4}{$12}{$5}{$12}{$6}{$12}{$7}{$12}{$8}{$12}{$9}{$12}{$10}{$13} Connection"
+        },
+        {
+            "type": "bluetooth",
+            "key": "{$1}├ 󰂱 Bluetooth  ",
+            "format": "{1} - {4}"
+        },
+        {
+            "type": "wifi",
+            "key": "{$2}├  WiFi       ",
+            "format": "{4} - {7} - {13} GHz",
+            "showErrors": "never"
+        },
+        {
+            "type": "dns",
+            "key": "{$4}├ 󱦂 DNS        "
+        },
+        {
+            "type": "localip",
+            "key": "{$6}├ 󰩟 Local IP   ",
+            "format": "{1}",
+            "showMac": false,
+            "showAllIps": false
+        },
+        {
+            "type": "publicip",
+            "key": "{$8}└ 󰩠 Public IP  ",
+            "timeout": 1000
+        },
+        {
+            "type": "custom",
+            "format": "{$10}{$11}{$9}{$12}{$8}{$12}{$7}{$12}{$6}{$12}{$5}{$12}{$4}{$12}{$3}{$12}{$2}{$12}{$1}{$13} Time "
+        },
+        {
+            "type": "DateTime",
+            "key": "{$10}├ 󰥔 Date/Time  ",
+        },
+        {
+            "type": "disk",
+            "key": "{$8}├  OS Age     ",
+            "folders": ["/"],
+            "format": "{create-time:10} ({days} days)"
+        },
+        {
+            "type": "uptime",
+            "key": "{$6}└  Uptime     "
+        },
+        {
+            "type": "custom",
+            "format": "                {$10}* {$9}* {$8}* {$7}* {$6}* {$5}* {$4}* {$3}* {$2}* {$1}*"
+        }
+    ]
+}
